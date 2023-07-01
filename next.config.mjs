@@ -1,15 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export default {
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "api.themoviedb.org",
+        hostname: "image.tmdb.org",
         port: "",
-        pathname: "/3/**",
+        pathname: "/t/p/**",
       },
     ],
   },
-};
+  webpack(config) {
 
-module.exports = nextConfig;
+    return config;
+  },
+};

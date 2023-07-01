@@ -1,0 +1,20 @@
+
+.image-overlay {
+    background: black;
+    opacity: 0;
+    transition: transform 250ms;
+    inset: 0;
+    position: absolute;
+}
+
+.image-link:active .image-overlay {
+    opacity: .45;
+}
+
+.image-link:hover .image-overlay {
+    opacity: .15;
+}
+
+.image-link {
+    position: relative;
+}
