@@ -8,10 +8,8 @@ interface Props extends AppSvgProps {
 const Star: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
   return (
     <svg
-      version="1.0"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 64 64"
+      role="img"
       {...props}
     >
       <path

@@ -9,6 +9,7 @@ const Plus: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
       viewBox="0 0 20 20"
       fill="none"
       {...props}
+      role="img"
     >
       <path
         fill="currentColor"

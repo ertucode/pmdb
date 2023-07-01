@@ -25,7 +25,7 @@ const MovieCard: NextComponentType<NextPageContext, {}, Props> = async (
       <div className="p-2 flex flex-col gap-2 h-full">
         <div className="flex gap-1 items-center">
           <Star className="text-yellow-400 w-3 h-3" />
-          <div className="text-base opacity-70">{props.vote_average}</div>
+          <div className="text-base opacity-70">{props.vote_average.toFixed(1)}</div>
         </div>
         <Link href={href} className="font-medium text-sm hover:underline">{props.title}</Link>
         <button className="text-cyan-500 flex gap-2 items-center justify-center font-bold bg-slate-300 bg-opacity-10 rounded py-2 hover:bg-opacity-20 transition-colors mt-auto">
