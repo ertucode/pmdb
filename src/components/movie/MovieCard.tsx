@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import styles from './image-overlay.module.css'
 
-interface Props extends Tmdb.Movie {}
+interface Props extends Tmdb.MovieList{}
 
 const MovieCard: NextComponentType<NextPageContext, {}, Props> = async (
   props: Props

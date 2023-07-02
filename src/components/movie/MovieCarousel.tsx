@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 import MovieCarouselArrow from "./MovieCarouselArrow";
 
 interface Props {
-  movies: Tmdb.Movie[];
+  movies: Tmdb.MovieList[];
 }
 
 export const CAROUSEL_CONTAINER_CLASS = 'carousel-container' 

@@ -1,4 +1,4 @@
-import { handleResponse } from "../handle-response";
+import { handleResponse } from "../utils/handle-response";
 import { Tmdb } from "./types";
 
 const options = {
