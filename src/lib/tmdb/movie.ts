@@ -1,5 +1,4 @@
 import { tmdb } from ".";
-import { UnionToIntersection } from "../utils/types";
 import { Tmdb } from "./types";
 
 export const tmdbMovie = {
@@ -16,8 +15,9 @@ export const tmdbMovie = {
     id: number,
     extra: TExtra[]
   ) =>
-    await tmdb.get<Tmdb.MovieDetail & UnionToIntersection<Tmdb.MovieDetailExtraMap[TExtra]>>(
-      `movie/${id}?append_to_response=${extra.join(",")}`
-    ),
+    await tmdb.get<
+      Tmdb.MovieDetail & {
+        [K in TExtra]: Tmdb.MovieDetailExtraMap[K];
+      }
+    >(`movie/${id}?append_to_response=${extra.join(",")}`),
 };
-

@@ -13,6 +13,7 @@ const MainPageSection: NextComponentType<NextPageContext, {}, Props> = ({
   const style = {
     "--indent": "1rem",
     "padding-inline": "2rem",
+    "maxWidth": 'var(--max-width)'
   } as React.CSSProperties;
 
   return (

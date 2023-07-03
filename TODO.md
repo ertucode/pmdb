@@ -58,6 +58,57 @@ use append_to_response => images, keywords, reviews, similar, recommendations, l
 add_rating, delete_rating
 field: belongs_to_collection
 
+## Movie page
+
+### IMDB
+Header
+PG length when       general rating your rating popularity??
+
+poster trailer videos&photos
+
+genre
+
+desc
+
+director writer ... stars       add to watchlist
+
+awards
+
+videos
+
+photos
+
+top cast
+
+similar
+
+storyline
+tags
+
+reviews
+
+recommendations
+
+other details
+
+### TMDB
+
+poster header (time)
+poster score your score add to fav play trailer
+poster weird quote
+poster desc
+
+cast director
+
+topcast                         link
+review                          keywords
+
+photos videos
+
+collection
+
+recommendations
+
 # People
 popular
 credits, moviecredits, tvcredits

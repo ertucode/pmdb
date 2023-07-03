@@ -100,6 +100,7 @@ export namespace Tmdb {
     similar: MovieSimilar;
     recommendations: ListResponse<MixedList>;
     lists: MovieListByUser;
+    credits: Credit
   };
 
   export type MovieDetailExtra = keyof MovieDetailExtraMap;
@@ -170,9 +171,43 @@ export namespace Tmdb {
     id: number;
     name: string;
     overview: string;
-    poster_path:string;
-    backdrop_path:string;
+    poster_path: string;
+    backdrop_path: string;
     parts: MixedList[];
+  };
+
+  export type CreditCast = {
+    adult: boolean;
+    gender: number;
+    id: number;
+    known_for_department: string;
+    name: string;
+    original_name: string;
+    popularity: number;
+    profile_path: string;
+    cast_id: number;
+    character: string;
+    credit_id: string;
+    order: number;
+  };
+
+  export type CreditCrew = {
+    adult: boolean;
+    gender: number;
+    id: number;
+    known_for_department: string;
+    name: string;
+    original_name: string;
+    popularity: number;
+    profile_path: string;
+    credit_id: string;
+    department: string;
+    job: string;
+  };
+
+  export type Credit = {
+    cast: CreditCast[];
+    crew: CreditCrew[];
   };
 
   export type Configuration = {

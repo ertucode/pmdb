@@ -6,7 +6,6 @@ body {
     --body-pad: 3rem;
     --max-width: 1400px;
 
-    max-width: var(--max-width);
     margin: 0 auto;
 
     font-family: Roboto, Helvetica, Arial, sans-serif;
